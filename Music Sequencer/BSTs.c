@@ -216,7 +216,7 @@ BST_Node *BST_delete(BST_Node *root, int bar, double index)
 			free(root);
 			return NULL;
 		}
-		else if(root->right == NULL) {
+		else if(root->left == NULL) {
 			tmp=root->left;
 			free(root);
 			return tmp;
